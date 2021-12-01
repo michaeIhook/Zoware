@@ -97,7 +97,7 @@ function Library:CreateWindow(Config, Parent)
 		for _,TabButton in pairs(TBContainer:GetChildren()) do
 			if TabButton:IsA("TextButton") then
 				if TabButton.Name == Library.FirstTab .. " TB" then
-					TabButton.BackgroundTransparency = 0
+					TabButton.BackgroundTransparency = 1
 				else
 					TabButton.BackgroundTransparency = 1
 				end
@@ -202,7 +202,7 @@ function Library:CreateWindow(Config, Parent)
 			CloseAll()
 			ResetAll()
 			Tab.Visible = true
-			TabButton.BackgroundTransparency = 0
+			TabButton.BackgroundTransparency = 1
 		end)
 
 		Tab.LeftSide.ListLayout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
