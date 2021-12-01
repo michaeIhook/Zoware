@@ -143,7 +143,7 @@ function Library:CreateWindow(Config, Parent)
 		Holder.ImageColor3 = Color
 	end
 	function WindowInit:SetBackgroundTransparency(Transparency)
-		Holder.ImageTransparency = Transparency
+		Holder.ImageTransparency = 1
 	end
 
 	function WindowInit:SetTileOffset(Offset)
